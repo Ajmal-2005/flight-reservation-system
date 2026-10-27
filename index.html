@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skylane | Flight reservation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#/home"><svg viewBox="0 0 30 30" width="28" height="28" aria-hidden="true"><rect width="30" height="30" rx="9" fill="#ff6b57"/><path d="M6 17 24 7l-4 17-5-6-4 4-1-6z" fill="#fff"/></svg>Skylane</a>
+    <button class="burger" onclick="document.body.classList.toggle('menu')" aria-label="Menu">☰</button>
+    <nav id="nav"></nav>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot"><div class="wrap"><span>Skylane demo. Data lives in your browser.</span><a href="#/admin-login">Staff login</a></div></footer>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"></div>
+<div id="toasts"></div>
+<script src="app.js"></script>
+</body>
+</html>
